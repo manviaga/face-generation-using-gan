@@ -10,7 +10,7 @@ layer3 :  Conv2d: 1024->2048, kernel size=4, stride =2, padding 1, bias=0 -> bat
 layer4 :  Linear: 32768->1, bias=1  
 
 Model of Generator:  
-Layer1:  Linear: 100->32768, bias=True) -> view 2048x4x4
+Layer1:  Linear: 100->32768, bias=True) -> view 2048x4x4  
 Layer2:  ConvTranspose2d: 2048->1024, kernel_size=4, stride=2, padding=1, bias=0) -> batchnorm  
 layer3:  ConvTranspose2d: 1024->512, kernel_size=4, stride=2, padding=1), bias=0)-> batchnorm  
-layer4:  ConvTranspose2d: 512->3, kernel_size=4, stride=2, padding=1, bias=0)
+layer4:  ConvTranspose2d: 512->3, kernel_size=4, stride=2, padding=1, bias=0)  
